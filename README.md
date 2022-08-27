@@ -43,3 +43,10 @@ The following example shows a typcial scenario of how this editor should be used
    }
 ```
 ## Installation
+
+Add a package by selecting `File` → `Add Packages…` in Xcode’s menu bar.
+
+Search for the CZImageEditor using the repo's URL:
+```console
+https://github.com/firebase/firebase-ios-sdk.git
+```
