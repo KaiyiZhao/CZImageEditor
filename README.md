@@ -8,7 +8,7 @@ This editor uses a struct called `ImageEditorParameters` to keep track of the ch
 
 ## Preview
 
-   Profile Image Picker    |         Gallery Only      |       Camera Only        |
+   Preset Filters     |         Rotation and Crop      |       Custom Editing       |
 :-------------------------:|:-------------------------:|:-------------------------:
 ![preview1](./previews/preview1.gif)  |  ![preview2](./previews/preview2.gif)  |  ![preview3](./previews/preview3.gif)
 
