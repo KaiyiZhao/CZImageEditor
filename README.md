@@ -13,6 +13,9 @@ User can adjust the image by rotating, zooming, and cropping. The edge of the im
 ### Custom Editings
 User can adjust the image's brightness, contrast, saturation, warmth, and sharpen in the **edit** pannel.
 
+### Different Shape of Cropping Frame
+You can preset the cropping frame to the editor. There are five options: image's original shape (default), 4 : 3, 1 : 1, 3 : 4, circle.
+
 ### Keep Track of Changes
 All changes and the orginal image will be saved separately. So these changes won't lose when the editor is dismissed. When user reopen the editor again, they have option to revert all changes or apply new changes on the latest version. See Usage section for more details.
 
