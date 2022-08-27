@@ -4,6 +4,25 @@ An image editor that can apply preset filters passed to it and customized editin
 
 ## Features
 
+### Preset Filters
+You can pass your own preset filters to the `CIImageEditor`. They should conform to `CIFilter`. By default, four built-in filters will be used: Normal (original), Crystal, Vivid, and Air.
+
+### Adjust Image
+User can adjust the image by rotating, zooming, and cropping. The edge of the image will be aligned automatically to make sure the cropping frame stays in the range of image.
+
+### Custom Editings
+User can adjust the image's brightness, contrast, saturation, warmth, and sharpen in the **edit** pannel.
+
+### Keep Track of Changes
+All changes and the orginal image will be saved separately. So these changes won't lose when the editor is dismissed. When user reopen the editor again, they have option to revert all changes or apply new changes on the latest version. See Usage section for more details.
+
+### Localization
+You have the option to apply localization string to this editor. You can set a localization prefix string to all shown text in editor's UI. 
+
+### Callback clousure
+You can add an optional callback clousure which will be excuted when user confirmed the changes made to the image.
+
+
 ## Preview
 
    Preset Filters     |         Rotation and Crop      |       Custom Editing       |
@@ -24,7 +43,7 @@ Only two required parameters are image and parameters. All other parameters have
   * **localizationPrefix**: A prefix string that attached to all text shown on the screen.
   * **actionWhenConfirm**: An optional clousure that excutes when user confirm the changes to the image.
 
-### Keep track of changes
+### Keep Track of Changes
 This editor uses a struct called `ImageEditorParameters` to keep track of the changes made to the image, so users get chance to revert the changes them made. You should create and keep this struct along with the `CZImageEditor` when you use this editor.
 
 ### Example
@@ -35,6 +54,7 @@ The following example shows a typcial scenario of how this editor should be used
        @State private var image = UIImage(named: "testImage")!
        @State private var showImageEditor = false
        @State private var savedImageEditorParameters = ImageEditorParameters()
+       @State private var yourOwnFilters: [CIFilter] = [...] // your own preset filters (optional)
 
        var body: some View {
            VStack {
@@ -47,7 +67,7 @@ The following example shows a typcial scenario of how this editor should be used
            }
            .frame(width: 200, height: 300)
            .fullScreenCover(isPresented: $showImageEditor) {
-               CZImageEditor(image: $image, parameters: $savedImageEditorParameters)
+               CZImageEditor(image: $image, parameters: $savedImageEditorParameters, filters: yourOwnFilters)
            }
        }
    }
