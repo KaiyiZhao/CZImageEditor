@@ -18,14 +18,14 @@ This editor uses a struct called `ImageEditorParameters` to keep track of the ch
 
 Only two required parameters are image and parameters. All other parameters have default values.
 
-  * image: A binding to the image about to be edited.
-  * parameters: A binding to a group of parameters that contains the original image and all possible changes have been made to the image.
-  * rame: What frame shape you want to use. By default, it is the same shape of editing. You can also choose 4 by 3, square, 3 by 4, and circle.
-  * filters: The preset filters that can be chosen by user to apply to the image. These filters should conform to `CIFilter`.
-  * filterNameFont: Text font applies to the preset filter name
-  * thumbnailMaxSize: The maximium length of the thumbnail of the image used during editing.
-  * localizationPrefix: A prefix string that attached to all text shown on the screen.
-  * actionWhenConfirm: An optional clousure that excutes when user confirm the changes to the image.
+  * **image**: A binding to the image about to be edited.
+  * **parameters**: A binding to a group of parameters that contains the original image and all possible changes have been made to the image.
+  * **frame**: What frame shape you want to use. By default, it is the same shape of editing. You can also choose 4 by 3, square, 3 by 4, and circle.
+  * **filters**: The preset filters that can be chosen by user to apply to the image. These filters should conform to `CIFilter`.
+  * **filterNameFont**: Text font applies to the preset filter name
+  * **thumbnailMaxSize**: The maximium length of the thumbnail of the image used during editing.
+  * **localizationPrefix**: A prefix string that attached to all text shown on the screen.
+  * **actionWhenConfirm**: An optional clousure that excutes when user confirm the changes to the image.
 
 
 ### Example
