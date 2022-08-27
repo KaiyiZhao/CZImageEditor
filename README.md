@@ -39,7 +39,7 @@ Only two required parameters are image and parameters. All other parameters have
 
   * **image**: A binding to the image about to be edited.
   * **parameters**: A binding to a group of parameters that contains the original image and all possible changes have been made to the image.
-  * **frame**: What frame shape you want to use. By default, it is the same shape of editing. You can also choose 4 by 3, square, 3 by 4, and circle.
+  * **frame**: What frame shape you want to use. By default, it is the same shape of original iamge. You can also choose in 4 by 3, square, 3 by 4, and circle.
   * **filters**: The preset filters that can be chosen by user to apply to the image. These filters should conform to `CIFilter`.
   * **filterNameFont**: Text font applies to the preset filter name
   * **thumbnailMaxSize**: The maximium length of the thumbnail of the image used during editing.
