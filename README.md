@@ -48,5 +48,5 @@ Add a package by selecting `File` → `Add Packages…` in Xcode’s menu bar.
 
 Search for the CZImageEditor using the repo's URL:
 ```console
-https://github.com/firebase/firebase-ios-sdk.git
+https://github.com/KaiyiZhao/CZImageEditor.git
 ```
