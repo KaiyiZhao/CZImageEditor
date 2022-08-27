@@ -7,9 +7,11 @@ This editor uses a struct called `ImageEditorParameters` to keep track of the ch
 ## Features
 
 ## Preview
-![preview1](./previews/preview1.gif)
-![preview2](./previews/preview2.gif)
-![preview3](./previews/preview3.gif)
+:-------------------------:|:-------------------------:|:-------------------------:
+![preview1](./previews/preview1.gif)  |  ![preview2](./previews/preview2.gif)  |  ![preview3](./previews/preview3.gif)
+
+
+
 
 ## Usage
 ### Parameters
