@@ -12,10 +12,7 @@ An image editor that can apply preset filters passed to it and customized editin
 
 ## Usage
 
-This editor uses a struct called `ImageEditorParameters` to keep track of the changes made to the image, so users get chance to revert the changes them made. You should create and keep this struct along with the `CZImageEditor` when you use this editor. Check the **Usage** section for details.
-
 ### Parameters
-
 Only two required parameters are image and parameters. All other parameters have default values.
 
   * **image**: A binding to the image about to be edited.
@@ -27,6 +24,8 @@ Only two required parameters are image and parameters. All other parameters have
   * **localizationPrefix**: A prefix string that attached to all text shown on the screen.
   * **actionWhenConfirm**: An optional clousure that excutes when user confirm the changes to the image.
 
+### Keep track of changes
+This editor uses a struct called `ImageEditorParameters` to keep track of the changes made to the image, so users get chance to revert the changes them made. You should create and keep this struct along with the `CZImageEditor` when you use this editor.
 
 ### Example
 The following example shows a typcial scenario of how this editor should be used in your code.
