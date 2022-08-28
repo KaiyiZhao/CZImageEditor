@@ -2,6 +2,11 @@
 
 CZImageEditor is an instagram-like image editor with clean and intuitive UI. It is pure swift and can apply preset filters and customized editings to a binded image. Customized editings include rotation, zooming, cropping, brightness, contrast, saturation, warmth, and sharpen.
 
+[![Language: Swift 5](https://img.shields.io/badge/language-swift%205-f48041.svg?style=flat)](https://developer.apple.com/swift)
+[![Platfor](https://img.shields.io/badge/platform-iOS-lightgrey)]
+
+
+
 ## Features
 
 ### Preset Filters
