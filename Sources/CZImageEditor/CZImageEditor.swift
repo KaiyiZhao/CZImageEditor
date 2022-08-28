@@ -180,6 +180,7 @@ extension CZImageEditor {
             .scaleEffect(zoomScale)
             .offset(panOffset)
             .opacity(showOriginalImage ? 0 : 1)
+            .onAppear(perform: refreshLayoutAndPreviews)
     }
     
     private var originalImageToCompare: some View {
@@ -221,7 +222,6 @@ extension CZImageEditor {
         .onChange(of: frameSize) { newValue in
             if newValue != .zero {
                 vm.frameSize = newValue
-                refreshLayoutAndPreviews()
             }
         }
     }
